@@ -25,7 +25,7 @@ else
 	sudo dpkg -i astrill.deb
 
 	# Chrome
-	#sudo dpkg -i 
+	sudo dpkg -i chrome.deb
 
 	# Dropbox
 
