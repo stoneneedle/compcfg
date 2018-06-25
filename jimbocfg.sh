@@ -27,8 +27,13 @@ else
 	# Chrome
 	sudo dpkg -i chrome.deb
 
+	#Pip & jrnl
+
+	sudo apt-get install python-pip
+	pip install jrnl[encrypted]
+
 	# Dropbox
 
 	# Sublime 3
 fi
-
+exit 0
