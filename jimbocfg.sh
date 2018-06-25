@@ -16,15 +16,19 @@ if [ "$1" = "adv" ]; then
 	# sudo apt-get install $pkg_str
 	echo "To be added"
 else
+	# Basic installs
 	sudo apt-get install $pkg_str
+
+	# Slightly more finicky/involved installs
+
+	# Astrill
+	sudo dpkg -i astrill.deb
+
+	# Chrome
+	#sudo dpkg -i 
+
+	# Dropbox
+
+	# Sublime 3
 fi
 
-# Slightly more finicky/involved installs
-
-# Dropbox
-
-# Sublime 3
-
-# Astrill
-
-# Chrome
