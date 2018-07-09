@@ -4,7 +4,7 @@
 # Also configures a few date/time features and style features for Xubuntu
 
 # Package string for basic installations
-pkg_str="cmatrix tmux vim tree htop unzip monit git curl wget"
+pkg_str="cmatrix tmux vim tree htop unzip monit git curl wget ansible"
 
 # TBA: sshd, mysql or postgresql, apache2, php
 
