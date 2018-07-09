@@ -1,22 +1,22 @@
 #/bin/bash
 # jimbocfg.sh :: config for a new OS
-# Includes commonly used apps, and assumes Debian system.
-# Also configures a few date/time features and style features for Xubuntu
+# Includes commonly used apps, and assumes Ubuntu 18.04 system.
+# Will configure a few date/time features and style features for Xubuntu
 
 # Package string for basic installations
-pkg_str="cmatrix tmux vim tree htop unzip monit git curl wget ansible"
+pkg_str="cmatrix tmux vim tree htop unzip monit git curl wget ansible python"
 
 # TBA: sshd, mysql or postgresql, apache2, php
 
 # Update
-sudo apt-get update
+sudo apt-get update && sudo apt-get upgrade
 
 # Initial app install
-if [ "$1" = "adv" ]; then
-	# sudo apt-get install $pkg_str
-	echo "To be added"
+if [ "$1" = "srv" ]; then
+	# Server build
+	sudo apt-get install $pkg_str
 else
-	# Basic installs
+	# Basic installs for a dev/home environment
 	sudo apt-get install $pkg_str
 
 	# Slightly more finicky/involved installs
